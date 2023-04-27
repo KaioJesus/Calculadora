@@ -1,0 +1,43 @@
+@import '../abstract/variaveis';
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: $cor-de-fundo;
+    font-size: $tamanho-fonte;
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0.5rem 0.5rem;
+
+        button{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            color: $cor-fonte;
+        }
+
+        .botao__dois-espacos{
+            grid-row: span 2;
+        }
+
+        .botao__operadores{
+            background: $cor-botoes-operadores;
+        }
+        
+        .botao__numeros{
+            background: $cor-botoes-numeros;
+            opacity: 0.5;
+        }
+
+        .botao__funcoes{
+            background: $botoes-funcoes;
+            color: black;
+        }
+    }
+}
+

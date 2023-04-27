@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  background-color: black;
+  font-size: 1rem;
+}
+body main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem 0.5rem;
+}
+body main button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+body main .botao__dois-espacos {
+  grid-row: span 2;
+}
+body main .botao__operadores {
+  background: orange;
+}
+body main .botao__numeros {
+  background: rgb(95, 95, 95);
+  opacity: 0.5;
+}
+body main .botao__funcoes {
+  background: rgb(177, 173, 173);
+  color: black;
+}/*# sourceMappingURL=style.css.map */
