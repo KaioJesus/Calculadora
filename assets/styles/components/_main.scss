@@ -4,11 +4,11 @@ body{
     height: 100vh;
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: $cor-de-fundo;
-    font-size: $tamanho-fonte;
-    
-    main {
+    margin: 1rem 0;
+
+    .botoes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -16,27 +16,48 @@ body{
 
         button{
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
+            border: none;
             color: $cor-fonte;
+            font-size: $tamanho-fonte;
         }
 
         .botao__dois-espacos{
-            grid-row: span 2;
+            grid-column: span 2;
+            width: 160px;
+            border-radius: 150px;
+            text-align: start;
+            padding: 0 1rem;
         }
 
         .botao__operadores{
             background: $cor-botoes-operadores;
+            &:focus{
+             background: $cor-fundo-focus;   
+             color: $cor-botoes-operadores;
+            }
         }
+
         
         .botao__numeros{
             background: $cor-botoes-numeros;
+            color: white;
             opacity: 0.5;
+            &:active{
+                background: rgb(158, 156, 156); 
+                transition: .3s;
         }
+
+           }
 
         .botao__funcoes{
             background: $botoes-funcoes;
             color: black;
+            &:active{
+                background: rgb(222, 219, 219); 
+                transition: .3s;
+            }
         }
     }
 }

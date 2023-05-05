@@ -6,33 +6,52 @@ body {
   height: 100vh;
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: center;
   background-color: black;
-  font-size: 1rem;
+  margin: 1rem 0;
 }
-body main {
+body .botoes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 0.5rem 0.5rem;
 }
-body main button {
+body .botoes button {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  border: none;
   color: white;
+  font-size: 2rem;
 }
-body main .botao__dois-espacos {
-  grid-row: span 2;
+body .botoes .botao__dois-espacos {
+  grid-column: span 2;
+  width: 160px;
+  border-radius: 150px;
+  text-align: start;
+  padding: 0 1rem;
 }
-body main .botao__operadores {
+body .botoes .botao__operadores {
   background: orange;
 }
-body main .botao__numeros {
+body .botoes .botao__operadores:focus {
+  background: white;
+  color: orange;
+}
+body .botoes .botao__numeros {
   background: rgb(95, 95, 95);
+  color: white;
   opacity: 0.5;
 }
-body main .botao__funcoes {
+body .botoes .botao__numeros:active {
+  background: rgb(158, 156, 156);
+  transition: 0.3s;
+}
+body .botoes .botao__funcoes {
   background: rgb(177, 173, 173);
   color: black;
+}
+body .botoes .botao__funcoes:active {
+  background: rgb(222, 219, 219);
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
