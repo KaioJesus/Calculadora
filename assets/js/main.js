@@ -5,8 +5,12 @@ const botoes = document.querySelectorAll('.botoes');
 
 botoes.forEach((btn) => {
     btn.addEventListener("click", (e) => {
+        const element = e.target;
 
+        if(element.classList.contains('botao__numeros')) {
+            mostraNoDiplay();
+        }
     })
-    console.log(btn);
+
 })
 
